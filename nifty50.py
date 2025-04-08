@@ -5,7 +5,7 @@ import plotly.express as px
 import numpy as np
 
 # Set page config
-st.set_page_config(page_title="HSBC NIFTY 50 Optimizer", layout="wide")
+st.set_page_config(page_title="NIFTY 50 Optimizer", layout="wide")
 
 @st.cache_data
 def load_stock_data():
@@ -23,10 +23,10 @@ def load_sector_mapping():
 nifty50_df = load_stock_data()
 sector_mapping = load_sector_mapping()
 
-st.title("\U0001F4CA HSBC NIFTY 50 Portfolio Optimizer")
+st.title("\U0001F4CA NIFTY 50 Portfolio Optimizer")
 
 st.markdown("""
-Welcome to the HSBC-style NIFTY 50 Portfolio Optimizer! 
+Welcome to the NIFTY 50 Portfolio Optimizer! 
 
 This tool helps you create a personalized investment portfolio based on your risk appetite, investment experience, and sector preferences.
 """)
